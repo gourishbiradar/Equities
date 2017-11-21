@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>DashBoard </title>
+<body>
+<p><a href="/Update/">Update</a></p>
+<p><a href="/List of Investments/">List of Investments</a></p>
+<p><a href="/Sectorwise Performance/">Sectorwise Performance</a></p>
+<p><a href="/Most Volatile Deriavatives/">Most Volatile Deriavatives</a></p>
+<p><a href="/Details of Specific Deriavatives/">Details of Specific Deriavatives</a></p>
+</body>
+</head>
+</html>

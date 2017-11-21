@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>MostVolatileFutures</title>
+<body>
+	{% extends 'base.html' %}
+	<h1>MostVolatileFutures</h1>
+	<table>
+		<tr>Symbol</tr>
+		<tr>Quality
+		<tr>Change</tr>
+	<table>
+	{% for d in deriavatives %}
+		<tr>
+			{{d}}
+		</tr>
+	{% endfor %}
+	</tr>
+</table>
+</body>
+</head>
+</html>

@@ -1,0 +1,91 @@
+{% extends 'base1.html' %}
+{% block content %}
+<div class="container-fluid">
+<div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+					<h3>Futures</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Expiry Date</th>
+                                <th>Open</th>
+                                <th>High</th>
+                                <th>Low</th>
+								<th>Close</th>
+								<th>SettlePrice</th>
+								<th>OpenI</th>
+								<th>TimeStamp</th>
+								<th>DeltaOI</th>
+							</tr>
+                        </thead>
+                        <tbody>
+					{% for deriavative in fut %}
+					<tr>
+						
+						<td>{{deriavative.symbol}}</td>
+						<td>{{deriavative.exp_dt}}</td>
+						<td>{{deriavative.Open}}</td>
+						<td>{{deriavative.high}}</td>
+						<td>{{deriavative.low}}</td>
+						<td>{{deriavative.close}}</td>
+						<td>{{deriavative.settlePrice}}</td>
+						<td>{{deriavative.openI}}</td>
+						<td>{{deriavative.TimeS}}</td>
+						<td>{{deriavative.deltaOI}}</td>
+					</tr>
+					{% endfor %}
+				     </tbody>
+                     </table>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+<div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+					<h3>Options</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Expiry Date</th>
+                                <th>Open</th>
+                                <th>High</th>
+                                <th>Low</th>
+								<th>Close</th>
+								<th>SettlePrice</th>
+								<th>OpenI</th>
+								<th>TimeStamp</th>
+								<th>DeltaOI</th>
+							</tr>
+                        </thead>
+                        <tbody>
+					{% for deriavative in opt %}
+					<tr>
+						
+						<td>{{deriavative.symbol}}</td>
+						<td>{{deriavative.exp_dt}}</td>
+						<td>{{deriavative.Open}}</td>
+						<td>{{deriavative.high}}</td>
+						<td>{{deriavative.low}}</td>
+						<td>{{deriavative.close}}</td>
+						<td>{{deriavative.settlePrice}}</td>
+						<td>{{deriavative.openI}}</td>
+						<td>{{deriavative.TimeS}}</td>
+						<td>{{deriavative.deltaOI}}</td>
+					</tr>
+					{% endfor %}
+				     </tbody>
+                     </table>
+                </div>
+             </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
